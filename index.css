@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+button{
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.fa-democrat{
+    font-size: 50px;
+    color:tomato;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-weight: 400 ;
+    margin: 20px;
+}
+
+nav{
+    flex: 2;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.nav-link{ 
+    color:#5f5f79 ;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+    font-size: 20px;
+ 
+}
+
+.cart a{
+    color: #5f5f79 ;
+}
+
+.logo-container, .nav-links, .cart{
+    display: flex;
+}
+
+.logo-container h4{
+    font-size: 24px;
+    font-weight: 900;
+    color: tomato;
+    letter-spacing: 5px;
+}
+
+.presentation{
+    /* background-color: lightsteelblue; */
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right,#494964, #6f6f89);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.intro-text p{
+    margin-top:5px;
+    font-size: 22px ;
+    color: #585772;
+    text-align: justify;
+}
+
+.cta{
+    padding: 50px 0 0 0;
+}
+
+.cta-select{
+    border: 2px solid tomato ;
+    background: transparent;
+    color: tomato;
+    height: 50px ;
+    width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-add{
+    background: tomato;
+    height: 50px ;
+    width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    margin: 30px 0 0 30px;
+}
+
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.cover img{
+    height: 100%;
+    filter: drop-shadow(0 10px 3px #111);
+    animation: drop 1.5s ease-in-out;
+   
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+        
+    }
+}
+
+
+@media screen and (max-width:1024px){
+
+   .presentation{
+       flex-direction: column;
+   }
+
+   .introduction{
+       margin-top:5vh;
+       text-align: center;
+   }
+
+   .intro-text h1{
+       font-size: 30px;
+   }
+
+   .intro-text p{
+       font-size: 18px;
+   }
+
+   .cta{
+       padding: 10px 0 0 0;
+   }
+
+   .cover img{
+       height: 40vh;
+   }
+}
+
+
+@media screen and (max-width:700px){
+  header{
+      flex-direction: column;
+      margin-bottom: 130px;
+  }
+  .nav-links{
+      flex-direction: column;
+      align-items: center;
+  }
+  .nav-link{
+    font-size: 30px;
+  }
+  .presentation{
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width:380px){
+    .cta-add{
+        margin:30px 0;
+        
+    }
+    .cta-select{
+        margin-top: 30px;
+    }
+    .cover img{
+        height: 30vh;
+    }
+}
